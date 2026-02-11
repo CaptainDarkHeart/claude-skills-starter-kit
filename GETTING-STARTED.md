@@ -7,9 +7,9 @@ Welcome! This guide will get you building your first Claude skill in 15-30 minut
 This starter kit contains:
 
 1. **complete-guide-to-building-skills-for-claude.md** - Complete reference (33 pages)
-2. **SKILL-template.md** - Copy this to start any new skill
+2. **SKILL-template.md** - Minimal template to start any new skill
 3. **skill-project-structure.md** - File organization patterns
-4. **example-skills/simple-example/** - Working example you can test
+4. **SPECIFICATION.md** - Link to Agent Skills standard at agentskills.io
 5. **This file** - Quick start guide
 
 ## Your First Skill in 5 Steps
@@ -18,7 +18,10 @@ This starter kit contains:
 
 A skill is just a folder with a `SKILL.md` file that teaches Claude how to do something specific.
 
-**Three-level system:**
+**Core Principle: Concise is Key**
+The context window is a public good. Only add context Claude doesn't already have. Default assumption: Claude is already very smart.
+
+**Three-level system (Progressive Disclosure):**
 - **Level 1** (YAML frontmatter) - Always loaded, tells Claude when to use the skill
 - **Level 2** (SKILL.md body) - Loaded when relevant, contains instructions
 - **Level 3** (Other files) - Loaded on-demand for details

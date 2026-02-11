@@ -1,13 +1,25 @@
-# Claude Skill Starter Kit
+# Claude Skills Starter Kit
 
-This starter kit contains everything you need to begin building Claude skills for your specific use cases.
+> **Note:** This repository is a community resource for building skills for Claude. For the official Agent Skills standard and specification, see [agentskills.io](https://agentskills.io). For Anthropic's example skills, see [anthropics/skills](https://github.com/anthropics/skills).
+
+A comprehensive starter kit containing everything you need to begin building Claude skills for your specific use cases.
+
+## What Are Skills?
+
+Skills are folders of instructions, scripts, and resources that Claude loads dynamically to improve performance on specialized tasks. They teach Claude how to complete specific tasks in a repeatable way—whether that's creating documents with your company's brand guidelines, analyzing data using your organization's workflows, or automating personal tasks.
+
+**Learn more:**
+- [What are skills?](https://support.claude.com/en/articles/12512176-what-are-skills)
+- [Using skills in Claude](https://support.claude.com/en/articles/12512180-using-skills-in-claude)
+- [Creating custom skills](https://support.claude.com/en/articles/12512198-creating-custom-skills)
+- [Agent Skills Standard](https://agentskills.io/specification)
 
 ## What's Included
 
 - **complete-guide-to-building-skills-for-claude.md** - Full reference guide extracted from Anthropic's official documentation
-- **SKILL-template.md** - Ready-to-use template for creating new skills
+- **SKILL-template.md** - Minimal template for creating new skills
 - **skill-project-structure.md** - Comprehensive guide to organizing your skill projects
-- **example-skills/** - Working examples demonstrating different patterns
+- **GETTING-STARTED.md** - Step-by-step tutorial for building your first skill
 
 ## Quick Start
 
@@ -116,18 +128,20 @@ See `complete-guide-to-building-skills-for-claude.md` Chapter 5 for detailed exa
 
 ## Resources
 
+- **Agent Skills Standard**: https://agentskills.io
 - **Official Skills Documentation**: https://docs.anthropic.com/claude/docs/skills
-- **Example Skills Repository**: https://github.com/anthropics/skills
-- **Claude Developers Discord**: For questions and support
+- **Anthropic Example Skills**: https://github.com/anthropics/skills
+- **Claude Support**: https://support.claude.com
 - **skill-creator skill**: Use in Claude.ai to generate and review skills
 
-## Tips from the Field
+## Core Principles
 
-1. **Start with one use case** - Perfect one workflow before expanding
-2. **Test trigger phrases** - Ask Claude "When would you use [skill-name]?"
-3. **Use progressive disclosure** - Keep SKILL.md focused, details in references/
-4. **Iterate based on real usage** - Skills are living documents
-5. **Consider combining skills** - They work together, not in isolation
+1. **Concise is Key** - The context window is a public good. Only add context Claude doesn't already have.
+2. **Start with one use case** - Perfect one workflow before expanding
+3. **Test trigger phrases** - Ask Claude "When would you use [skill-name]?"
+4. **Use progressive disclosure** - Keep SKILL.md focused, details in references/
+5. **Iterate based on real usage** - Skills are living documents
+6. **Assume Claude is smart** - Don't over-explain what Claude already knows
 
 ## Getting Help
 
